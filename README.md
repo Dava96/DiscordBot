@@ -5,6 +5,7 @@ interacts with libraries and as a little project for myself.
 # Commands
 
 !setgame - Allows you to change or set what the bot is displaying as its status to a custom message. Example !setgame Running Simulator.
+
 !bitcoin/bitcoinUSD - Shows What the current price of bitcoin is in GBP/USD.
 
 !sqaure - squares whatever number you enter after the command and prints the output into chat.
