@@ -1,7 +1,12 @@
+import os
+import discord
 import random
 import requests
 from discord import Game
 from discord.ext.commands import Bot
+from discord.ext import commands
+from discord.utils import get
+
 
 bot_prefix = ("?", "!", "") # two different prefix's in a tuple
 token = "##################################"
@@ -21,7 +26,14 @@ async def eight_ball(context):
 	]
 	await client.say(random.choice(possible_responses) + ", " + context.message.author.mention) # ats the who started the command
 
-
+# Heads or Tails
+@bot.command(pass_context=True)
+async def destiny(ctx, *args):
+    dice = (random.randint(1,3))
+    if dice == 1:
+            await ctx.message.channel.send("Heads")
+    else:
+            await ctx.message.channel.send("Tails")
 	
 @client.event
 async def on_ready():
