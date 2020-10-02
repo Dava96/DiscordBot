@@ -28,7 +28,7 @@ async def eight_ball(context):
 
 # Heads or Tails
 @bot.command(pass_context=True)
-async def destiny(ctx, *args):
+async def HeadOrTails(ctx, *args):
     dice = (random.randint(1,3))
     if dice == 1:
             await ctx.message.channel.send("Heads")
